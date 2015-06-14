@@ -1,4 +1,4 @@
-package nailro.com.member.bean;
+﻿package nailro.com.member.bean;
 
 public class MemberBean {
 	private String name ;  // 회원 이름
@@ -8,7 +8,6 @@ public class MemberBean {
 	private String cellPhone ;  // 회원 핸드폰 번호
 	private String telNo ;  // 회원 핸드폰 번호
 	private int gender ;   // 회원성별
-	
 	private String email ;    // 회원이메일
 	
 	// 이상 회원가입 <I> 필요 변수
@@ -17,9 +16,6 @@ public class MemberBean {
 	private String rank ;     // 회원 등급코드
 	private String rankName ;     // 회원 등급명
 	// 이상 게시판 후기 필요한 변수 ( + memberId+ memberPasswordl)
-	
-	
-	
 	public String getName() {
 		return name;
 	}

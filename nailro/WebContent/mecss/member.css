@@ -1,6 +1,6 @@
 @CHARSET "UTF-8";
 
-@IMPORT url("Father.css");  /* 해당 css 파일 상속 */
+@IMPORT url("reset.css");  /* 해당 css 파일 상속 */
 
 .trClass {
 	border: 2px solid black;
@@ -10,17 +10,23 @@
 .tdClassTitle {
 	border: 2px solid black;
 	text-align: center;
-	background-color: #004080;
-	color: #80ff80;
+	background-color: #FF0000;
+	color: black ; 
 	width: 150px;
 }
 
-.tdClass {
+.tdClassRow {
 	border: 2px solid black;
 	text-align: center;
-	background-color: #FF0000;
+	background-color: #ffffff;
 	color: black;
 	width: 150px;
+}
+
+.legend{
+  border: 1px solid black;
+  text-align: left;
+	
 }
 
 

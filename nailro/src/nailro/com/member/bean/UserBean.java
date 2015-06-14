@@ -1,6 +1,6 @@
-package nailro.com.member.bean;
+﻿package nailro.com.member.bean;
 
-public class UserBean {
+public class UserBean extends MemberBean{
 	private int merit ;   // 회원의 우대사항 (ex. 장애인, 군인, 제휴업체 직원)
 
 	public int getMerit() {
@@ -11,5 +11,5 @@ public class UserBean {
 		this.merit = merit;
 	}
 	
-
+	
 }

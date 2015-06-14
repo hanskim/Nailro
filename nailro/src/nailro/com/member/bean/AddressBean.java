@@ -1,4 +1,4 @@
-package nailro.com.member.bean;
+﻿package nailro.com.member.bean;
 
 public class AddressBean {
 	private String memberZipcode  ;   // 회원 우편번호
@@ -29,10 +29,7 @@ public class AddressBean {
 	public void setAddressdetail(String addressdetail) {
 		this.addressdetail = addressdetail;
 	}
+		
 	
-	
-	
-	
-	
-
 }
+
