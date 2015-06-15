@@ -1,0 +1,71 @@
+@CHARSET "UTF-8";
+/*헤더  */
+header{
+   height : 100px;
+}
+/*제목   */
+#h2Div{
+margin-left: 50%;
+margin-top: 10px;
+}
+
+/*로고  */
+.logo{
+	float: left;
+    margin-left: 80px; 
+}
+.logo a{
+	text-decoration: none;
+}
+.logo a img{
+	width: 150px;
+	height:70px;
+}
+#h2Div a:HOVER{
+color:  white;
+}
+/*GNB */
+.gnb{
+    margin-right : 50px;
+    float: right;
+   
+	}
+.gnb a{
+	color: black;
+	font-family: sans-serif;
+}
+.gnb a:HOVER{
+	color: #ffffff;
+}
+/*LNB */
+#lnb{
+	background-color : #ff00ff;
+	background-image: url("../../image/home/cloud.jpg");
+	height: 70px;
+	width : 100%;
+	margin-top: 40px;
+	font-size: 25px ;
+	font-style: "돋움";
+	word-spacing: normal;
+	margin-bottom: 10px;
+}
+nav{
+	list-style: none;
+}
+/*리스트 ul  */
+nav ul{
+list-style: none;
+margin-left: 40%;
+padding-top: 20px;
+}
+/*리스트 li 가로 정렬을 여기서한다.   */
+nav ul li{
+	text-align : center;
+	float: left;
+}
+nav ul li a:HOVER{
+	color: gray;
+}
+a{
+	text-decoration: none;
+}

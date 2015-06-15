@@ -6,19 +6,18 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8" />
-	<title>관리자 창 (AdminAuthority)</title>
+	<title>비회원 핸드폰 예매</title>
 </head>
 <body>
 
 
 <fieldset> 
-<legend> AdminAuthority View </legend> 
+<legend>비회원 핸드폰 예매 </legend> 
 
 <div>
 
-관리자권한 :  <%= request.getAttribute("authority") %> <br />
-권한 등록일 :  <%= request.getAttribute("regiDate") %> <br />
-
+핸드폰번화 :  <%= request.getAttribute("cellPhone") %> <br />
+패스워드: <%= request.getAttribute("name") %> <br />
 
 </div>
 </fieldset> 
@@ -26,4 +25,9 @@
 	
 </body>
 </html>
+    
+    
+
+
+
     

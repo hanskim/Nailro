@@ -6,20 +6,22 @@
 
 <head>
 <meta charset="UTF-8">
-<title>관리자 창 (AdminAuthority)</title>
+<title>User  (User)</title>
 <style >
-@IMPORT url("<%=request.getContextPath()%>/css/member/member.css");
+@IMPORT url("../../mecss/member.css");
 </style>
 </head>
 
 <body>
+
+
 <div id= "boyddiv" >
-<form action="adminLogin.me" >
+<form action="<%= request.getContextPath()%>/user.do" >
 
     <table class="tableClass">
 	<tr class="trClass">
 				<td class="tdClassRow" colspan="2"><span>
-                 <legend > AdminAuthority </legend> 
+                 <legend > User </legend> 
 				</tr>
      
 			<tr class="trClass">
@@ -28,19 +30,14 @@
 			</tr>
 
 			<tr class="trClass">
-				<td class="tdClassRow">관리자권한</td>
-				<td class="tdClassRow"><input type="text" id="authority" name="authority" style="width: 350px"></td>
-			</tr>
-			
-			<tr class="trClass">
-				<td class="tdClassRow">권한 등록일 </td>
-				<td class="tdClassRow"><input type="text" id="regiDate" name="regiDate" style="width: 350px"></td>
+				<td class="tdClassRow">사용자메리트</td>
+				<td class="tdClassRow"><input type="text" id="merit" name="merit" style="width: 350px"></td>
 			</tr>
 			
 			
 			<tr class="trClass">
 				<td class="tdClassRow" colspan="2"><span>
-				<input type="submit" value="관리자 권한 등록" style="width: 40%"> 
+				<input type="submit" value="사용자 권한 " style="width: 40%"> 
 				<input type="reset" value="권한 입력 취소" style="width: 40%"></span></td>
 			</tr>
 	</table>	

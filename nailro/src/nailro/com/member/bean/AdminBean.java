@@ -5,6 +5,8 @@ public class AdminBean extends MemberBean{
 		private String authority ;     //관리자 권한
 		private String regiDate ;   // 관리자 권한 등록일
 		// 이상 관리자 회원관리 <I> 에 필요한 변수
+		
+		
 		public String getAuthority() {
 			return authority;
 		}

@@ -5,6 +5,8 @@ public class AddressBean {
 	private String memberCity ;   //회원 시도
 	private String memberVilleage  ;   //  회원동
 	private String addressdetail ;   //상세주소
+	
+	
 	public String getMemberZipcode() {
 		return memberZipcode;
 	}

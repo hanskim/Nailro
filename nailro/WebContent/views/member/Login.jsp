@@ -6,19 +6,18 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8" />
-	<title>관리자 창 (AdminAuthority)</title>
+	<title>로그인  뷰</title>
 </head>
 <body>
 
 
 <fieldset> 
-<legend> AdminAuthority View </legend> 
+<legend> 로그인  뷰 </legend> 
 
 <div>
 
-관리자권한 :  <%= request.getAttribute("authority") %> <br />
-권한 등록일 :  <%= request.getAttribute("regiDate") %> <br />
-
+아이디 :  <%= request.getAttribute("id") %> <br />
+패스워드: <%= request.getAttribute("pass") %> <br />
 
 </div>
 </fieldset> 
@@ -27,3 +26,6 @@
 </body>
 </html>
     
+    
+
+

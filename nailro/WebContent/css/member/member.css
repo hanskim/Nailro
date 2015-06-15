@@ -1,6 +1,6 @@
 @CHARSET "UTF-8";
 
-@IMPORT url("reset.css");  /* 해당 css 파일 상속 */
+/* @IMPORT url("reset.css");  */ /* 해당 css 파일 상속 */
 
 .trClass {
 	border: 2px solid black;
@@ -14,7 +14,6 @@
 	color: black ; 
 	width: 150px;
 }
-
 .tdClassRow {
 	border: 2px solid black;
 	text-align: center;
@@ -22,11 +21,16 @@
 	color: black;
 	width: 150px;
 }
-
-.legend{
-  border: 1px solid black;
-  text-align: left;
-	
+#loginform{
+    color: #ff0080;
+    height: 750px;
 }
-
-
+.tableClass{
+	 margin-left: 500px;
+}
+#joinform{
+	 height: 750px;
+}
+#nonmember{
+	 height: 750px;
+}

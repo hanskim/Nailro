@@ -6,18 +6,18 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8" />
-	<title>관리자 창 (AdminAuthority)</title>
+	<title>유저 창 (User)</title>
 </head>
 <body>
 
 
 <fieldset> 
-<legend> AdminAuthority View </legend> 
+<legend> User  View </legend> 
 
 <div>
 
-관리자권한 :  <%= request.getAttribute("authority") %> <br />
-권한 등록일 :  <%= request.getAttribute("regiDate") %> <br />
+유저 메리트 :  <%= request.getAttribute("merit") %> <br />
+
 
 
 </div>
