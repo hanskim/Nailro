@@ -8,7 +8,7 @@
 				<div id="clear"></div>
 			<div class="gnb">
 				<a href="loginForm.me">로그인</a> | <a href="joinForm.me">회원가입</a>
-				 | <a href="#">마이페이지</a> | <a href="adminLoginForm.me">관리자</a>
+				 | <a href="#">마이페이지</a> | <a href="admin.home">관리자</a>
 			</div>
 			
 		<div id="clear"></div>

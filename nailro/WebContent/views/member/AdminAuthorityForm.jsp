@@ -8,13 +8,15 @@
 <meta charset="UTF-8">
 <title>관리자 창 (AdminAuthority)</title>
 <style >
-@IMPORT url("<%=request.getContextPath()%>/css/member/member.css");
+@IMPORT url("<%=request.getContextPath()%>/css/member.css");
 </style>
 </head>
 
 <body>
+
+
 <div id= "boyddiv" >
-<form action="adminLogin.me" >
+<form action="<%= request.getContextPath()%>/admin.do" >
 
     <table class="tableClass">
 	<tr class="trClass">

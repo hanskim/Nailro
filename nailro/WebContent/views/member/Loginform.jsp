@@ -14,7 +14,7 @@
 	<div id="wrap">
 	<jsp:include page="/views/home/header.jsp"/>
 	<div id="clear"></div>
-		<form action="login.me" id="loginform" method="post">
+		<form action="<%=request.getContextPath()%>/login.me" id="loginform" method="post">
 		<br /><br /><br /><br /><br /><br />
 			<table class="tableClass">
 				<tr class="trClass">

@@ -15,12 +15,10 @@
 </style>
 </head>
 <body>
-
 	<!--bodydiv 수정부분 wrap -->
 	<div id="wrap">
 		<jsp:include page="/views/home/header.jsp" />
-		<form id="joinform" action="join.me" method="post">
-		<!--joinform css 지정-->
+		<form id="joinform" action="<%=request.getContextPath()%>/join.me" method="post"><!--joinform css 지정-->
 <br />
 <br />
 			<table class="tableClass">

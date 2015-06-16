@@ -18,7 +18,7 @@
 
 	<div id="wrap">
 	<jsp:include page="/views/home/header.jsp"/>
-		<form id="nonmember" action="nonmember.me" method="post"><!--비회원은 예매 파트와 관련이 있음  -->
+		<form id="nonmember" action="<%=request.getContextPath()%>/nonmember.me" method="post"><!--비회원은 예매 파트와 관련이 있음  -->
 		<br /><br /><br /><br />
 			<table class="tableClass">
 				<tr class="trClass">

@@ -8,7 +8,7 @@
 <meta charset="UTF-8">
 <title>로그인 창 (Join Form)</title>
 <style >
-@IMPORT url("<%=request.getContextPath()%>/css/member/member.css");
+@IMPORT url("../../mecss/member.css");
 </style>
 </head>
 
