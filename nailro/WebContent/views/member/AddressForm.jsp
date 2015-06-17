@@ -8,15 +8,18 @@
 <meta charset="UTF-8">
 <title>로그인 창 (Join Form)</title>
 <style >
-@IMPORT url("../../mecss/member.css");
+@IMPORT url("<%=request.getContextPath()%>/css/member/member.css");
+@IMPORT url("<%=request.getContextPath()%>/css/home/template.css");
 </style>
 </head>
 
 <body>
-
-
-<div id= "boyddiv" >
-<form action="<%= request.getContextPath()%>/address.do" method="get">
+<div id="wrap">
+	<jsp:include page="/views/home/header.jsp"/>
+	<div id="clear"></div>
+	
+<form action="<%=request.getContextPath()%>/address.me" id="addressform" method="post">
+<br /><br /><br /><br /><br /><br />
 
     <table class="tableClass">
 	<tr class="trClass">
@@ -54,10 +57,11 @@
 				<input type="submit" value="주소제출" style="width: 40%"> 
 				<input type="reset" value="주소입력 초기화" style="width: 40%"></span></td>
 			</tr>
-	</tabla>	
-</form>			
+	</table>
+		</form>
+<div id="clear"></div>
+<jsp:include page="/views/home/bottom.jsp"/>
 </div>
-
-
 </body>
 </html>
+

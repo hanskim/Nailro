@@ -9,7 +9,10 @@
 	<title>로그인  뷰</title>
 </head>
 <body>
-
+	<div id="wrap">
+	<jsp:include page="/views/home/header.jsp"/>
+	<div id="clear"></div>
+	<br /><br /><br /><br /><br /><br />
 
 <fieldset> 
 <legend> 주소  뷰 </legend> 
@@ -21,10 +24,11 @@
 동 :  <%= request.getAttribute("memberVilleage") %> <br />
 상세주소 :  <%= request.getAttribute("addressdetail") %> <br />
 
+		
+</fieldset>
+<div id="clear"></div>
+<jsp:include page="/views/home/bottom.jsp"/>
 </div>
-</fieldset> 
-	
-	
 </body>
 </html>
     

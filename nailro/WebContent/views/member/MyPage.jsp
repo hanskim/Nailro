@@ -4,54 +4,48 @@
 <!DOCTYPE html>
 <html>
 
+미완!!!
+
 <head>
+
 <meta charset="UTF-8">
-<title>관리자 창 (AdminAuthority)</title>
+<title>User  (User)</title>
 <style >
 @IMPORT url("<%=request.getContextPath()%>/css/member/member.css");
 @IMPORT url("<%=request.getContextPath()%>/css/home/template.css");
-
 </style>
-
 </head>
 
 <body>
-<div id="wrap">
+	<div id="wrap">
 	<jsp:include page="/views/home/header.jsp"/>
 	<div id="clear"></div>
-<form action="<%= request.getContextPath()%>/admin.do" id="adminauthorityform" method="post">
+<form action="<%= request.getContextPath()%>/mypage.me" id="mypage" method="post"> >
 <br /><br /><br /><br /><br /><br />
     <table class="tableClass">
 	<tr class="trClass">
 				<td class="tdClassRow" colspan="2"><span>
-                 <legend > AdminAuthority </legend> 
+                 <legend > 내정보 보기창 </legend> 
 				</tr>
-     
+
 			<tr class="trClass">
 				<td class="tdClassTitle">필드</td>
 				<td class="tdClassTitle">입력값</td>
 			</tr>
 
 			<tr class="trClass">
-				<td class="tdClassRow">관리자권한</td>
-				<td class="tdClassRow"><input type="text" id="authority" name="authority" style="width: 350px"></td>
+				<td class="tdClassRow">사용자메리트</td>
+				<td class="tdClassRow"><input type="text" id="merit" name="merit" style="width: 350px"></td>
 			</tr>
-			
-			<tr class="trClass">
-				<td class="tdClassRow">권한 등록일 </td>
-				<td class="tdClassRow"><input type="text" id="regiDate" name="regiDate" style="width: 350px"></td>
-			</tr>
-			
-			
 			<tr class="trClass">
 				<td class="tdClassRow" colspan="2"><span>
-				<input type="submit" value="관리자 권한 등록" style="width: 40%"> 
+				<input type="submit" value="사용자 권한 " style="width: 40%"> 
 				<input type="reset" value="권한 입력 취소" style="width: 40%"></span></td>
 			</tr>
 	</table>	
-</form>			
-<div id="clear"></div>
-<jsp:include page="/views/home/bottom.jsp"/>
+</form>	
+        <div id="clear"></div>
+		<jsp:include page="/views/home/bottom.jsp"/>		
 </div>
 </body>
 </html>

@@ -12,7 +12,9 @@ import javax.servlet.http.HttpServletResponse;
 @WebServlet({"/loginForm.me","/login.me",
 	         "/joinForm.me","/join.me",
 	         "/myPage.me","/nonmember.me",
-	         "/user.me"})//패키지 리스트,패키지예약 ....  
+	         "/user.me","/admin.do",
+	         "/address.me","/logout.me" ,
+	        "/revise.me"})//패키지 리스트,패키지예약 ....  
 public class MemberController extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	protected void doprocess(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -26,7 +28,7 @@ public class MemberController extends HttpServlet {
 	
 	switch (path) {
 	case "loginForm.me":
-	url="Login";
+	url="Loginform";
 	break;
 		
 	case "login.me":
@@ -56,12 +58,29 @@ public class MemberController extends HttpServlet {
 		request=(HttpServletRequest) user(request);
 		url="User";
 		break;
-	/*case "":
-		
+	case "admin.do":
+		request=(HttpServletRequest) adminauthority(request);
+		url="AdminAuthority";
 		break;
-	case "":
 		
+	case "address.me":
+		request=(HttpServletRequest) address(request);
+		url="Address";
 		break;
+		
+    case "logout.me":
+    	request=(HttpServletRequest) logout(request);
+		url="Logout";
+		break;
+		
+     case "revise.me":
+    	 request=(HttpServletRequest) revise(request);
+ 		 url="ReviseMember";
+ 		break;
+	
+   /*  case "":
+	
+	     break;
 */
 	default:
 		break;
@@ -72,6 +91,36 @@ public class MemberController extends HttpServlet {
 		dispatcher.forward(request, response);
 		
 	}
+
+
+
+	
+
+
+	private Object logout(HttpServletRequest request) {
+		String id = request.getParameter("id");
+		String pass = request.getParameter("pass");
+		request.setAttribute("id", id);
+		request.setAttribute("pass", pass);
+		return request;
+	}
+
+
+
+	private HttpServletRequest address(HttpServletRequest request) {
+		String memberZipcode = request.getParameter("memberZipcode");
+		String memberCity = request.getParameter("memberCity");
+		String memberVilleage = request.getParameter("memberVilleage");
+		String addressdetail = request.getParameter("addressdetail");
+
+		request.setAttribute("memberZipcode", memberZipcode);
+		request.setAttribute("memberCity", memberCity);
+		request.setAttribute("memberVilleage", memberVilleage);
+		request.setAttribute("addressdetail", addressdetail);
+		return request;
+	}
+
+
 
 	private Object setjoin(HttpServletRequest request) {
 		String name = request.getParameter("name");
@@ -115,6 +164,24 @@ public class MemberController extends HttpServlet {
 		return request;
 	}
 	
+	private Object adminauthority(HttpServletRequest request) {
+		String authority = request.getParameter("authority");
+		String regiDate = request.getParameter("regiDate");
+		request.setAttribute("authority", authority);
+		request.setAttribute("regiDate", regiDate);
+		return request;
+		
+	}
+	
+	private Object revise(HttpServletRequest request) {
+		String id = request.getParameter("id");
+		String pass = request.getParameter("pass");
+		request.setAttribute("id", id);
+		request.setAttribute("pass", pass);
+		return request;
+
+	}
+
 	
 	
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
