@@ -17,7 +17,7 @@
 	
 	에러메세지 : <%= exception.getMessage() %>  <br />
 	
-	<img src="<%=request.getContextPath()%>/images/bomb.PNG " alt="" /> <br />
+	<img src="<%=request.getContextPath()%>/image/error/bomb.PNG " alt="" /> <br />
 	
 </body>
 </html>

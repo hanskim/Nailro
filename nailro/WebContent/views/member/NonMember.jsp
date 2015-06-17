@@ -9,6 +9,10 @@
 	<title>비회원 핸드폰 예매</title>
 </head>
 <body>
+	<div id="wrap">
+	<jsp:include page="/views/home/header.jsp"/>
+	<div id="clear"></div>
+	<br /><br /><br /><br /><br /><br />
 
 
 <fieldset> 
@@ -21,12 +25,12 @@
 
 </div>
 </fieldset> 
-	
-	
+<div id="clear"></div>
+
+<jsp:include page="/views/home/bottom.jsp"/>	
+</div>
 </body>
 </html>
-    
-    
 
 
 

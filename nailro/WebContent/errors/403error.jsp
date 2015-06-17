@@ -8,10 +8,8 @@
 </head>
 <body>
 	<div>
-	 <img src="<%= request.getContextPath()%>/images/403error.jpg" alt="" />
+	 <img src="<%= request.getContextPath()%>/image/error/403error.jpg" alt="" />
 	</div>
-	
 
-	
 </body>
 </html>

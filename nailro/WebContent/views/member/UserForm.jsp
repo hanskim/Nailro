@@ -8,20 +8,21 @@
 <meta charset="UTF-8">
 <title>User  (User)</title>
 <style >
-@IMPORT url("<%=request.getContextPath()%>/css/member.css");
+@IMPORT url("<%=request.getContextPath()%>/css/member/member.css");
+@IMPORT url("<%=request.getContextPath()%>/css/home/template.css");
 </style>
 </head>
 
 <body>
-
-
-<div id= "boyddiv" >
-<form action="<%= request.getContextPath()%>/user.do" >
-
+	<div id="wrap">
+	<jsp:include page="/views/home/header.jsp"/>
+	<div id="clear"></div>
+<form action="<%= request.getContextPath()%>/user.me" id="userForm" method="post"> >
+<br /><br /><br /><br /><br /><br />
     <table class="tableClass">
 	<tr class="trClass">
 				<td class="tdClassRow" colspan="2"><span>
-                 <legend > User </legend> 
+                 <legend > User 메리트 입력 </legend> 
 				</tr>
 
 			<tr class="trClass">
@@ -39,7 +40,9 @@
 				<input type="reset" value="권한 입력 취소" style="width: 40%"></span></td>
 			</tr>
 	</table>	
-</form>			
+</form>	
+        <div id="clear"></div>
+		<jsp:include page="/views/home/bottom.jsp"/>		
 </div>
 </body>
 </html>

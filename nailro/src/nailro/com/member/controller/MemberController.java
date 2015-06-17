@@ -11,7 +11,8 @@ import javax.servlet.http.HttpServletResponse;
 
 @WebServlet({"/loginForm.me","/login.me",
 	         "/joinForm.me","/join.me",
-	         "/myPage.me","/nonmember.me"})//패키지 리스트,패키지예약 ....  
+	         "/myPage.me","/nonmember.me",
+	         "/user.me"})//패키지 리스트,패키지예약 ....  
 public class MemberController extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	protected void doprocess(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -48,19 +49,20 @@ public class MemberController extends HttpServlet {
 		break;
 	case "nonmember.me":
 		request=(HttpServletRequest) nonmember(request);
-		url="nonmember";
+		url="NonMember";
 		break;
 		
+	case "user.me":
+		request=(HttpServletRequest) user(request);
+		url="User";
+		break;
 	/*case "":
 		
 		break;
 	case "":
 		
 		break;
-	case "":
-		
-		break;*/
-
+*/
 	default:
 		break;
 	}
@@ -70,8 +72,6 @@ public class MemberController extends HttpServlet {
 		dispatcher.forward(request, response);
 		
 	}
-
-
 
 	private Object setjoin(HttpServletRequest request) {
 		String name = request.getParameter("name");
@@ -101,12 +101,17 @@ public class MemberController extends HttpServlet {
 	private Object nonmember(HttpServletRequest request) {
 		String cellPhone = request.getParameter("cellPhone");
 		String name = request.getParameter("name");
-		
-		
 		request.setAttribute("cellPhone", cellPhone);
 		request.setAttribute("name", name);
-		
-		
+
+		return request;
+	}
+	
+
+
+	private Object user(HttpServletRequest request) {
+		String merit = request.getParameter("merit");
+		request.setAttribute("merit", merit);
 		return request;
 	}
 	

@@ -9,6 +9,10 @@
 </head>
 <body>
 
+	<div id="wrap">
+	<jsp:include page="/views/home/header.jsp"/>
+	<div id="clear"></div>
+	<br /><br /><br /><br /><br /><br />
 
 <fieldset> 
 <legend> 회원정보 뷰 </legend> 
@@ -28,7 +32,8 @@
 
 </div>
 </fieldset> 
-	
-	
+<div id="clear"></div>
+<jsp:include page="/views/home/bottom.jsp"/>	
+</div>
 </body>
 </html>

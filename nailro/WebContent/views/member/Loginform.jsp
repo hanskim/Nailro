@@ -49,7 +49,7 @@
 		</form>
 		<div id="clear"></div>
 		<jsp:include page="/views/home/bottom.jsp"/>
-	</div>
+</div>
 </body>
 </html>
 

@@ -10,20 +10,22 @@
 </head>
 <body>
 
+	<div id="wrap">
+		<jsp:include page="/views/home/header.jsp" />
+		<div id="clear"></div>
+		<br /><br /><br /><br /><br /><br />
 
-<fieldset> 
-<legend> User  View </legend> 
+		<fieldset>
+			<legend> User View </legend>
 
-<div>
-
-유저 메리트 :  <%= request.getAttribute("merit") %> <br />
-
-
+			<div>
+          유저 메리트 :<%= request.getAttribute("merit") %><br />
 
 </div>
 </fieldset> 
-	
-	
+<div id="clear"></div>
+<jsp:include page="/views/home/bottom.jsp"/>	
+</div>
 </body>
 </html>
     
