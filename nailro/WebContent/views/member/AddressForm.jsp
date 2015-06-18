@@ -18,6 +18,7 @@
 	<jsp:include page="/views/home/header.jsp"/>
 	<div id="clear"></div>
 	
+
 <form action="<%=request.getContextPath()%>/address.me" id="addressform" method="post">
 <br /><br /><br /><br /><br /><br />
 

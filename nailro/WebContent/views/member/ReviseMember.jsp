@@ -17,6 +17,8 @@
 	<div id="clear"></div>
 	<br /><br /><br /><br /><br /><br />
 	
+	<jsp:include page="SideMenu.jsp"/>
+	
 	<fieldset >
       <legend> 회원정보수정 뷰 </legend>
 

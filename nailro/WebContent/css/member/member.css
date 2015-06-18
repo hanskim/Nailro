@@ -1,6 +1,6 @@
 @CHARSET "UTF-8";
 
-/* @IMPORT url("reset.css");  */ /* 해당 css 파일 상속 */
+ /* @IMPORT url("common.css");  */ 해당 css 파일 상속 */
 
 .trClass {
 	border: 2px solid black;
@@ -24,19 +24,55 @@
 #loginform{
     color: #ff0080;
     height: 750px;
+    margin-left: 500px;
 }
 .tableClass{
-	 margin-left: 500px;
+	 margin-left: 0px;
 }
 #joinform{
 	 height: 750px;
 }
+
 #nonmember{
 	 height: 750px;
 }
-#snbbody{
-	
+
+/* 회원(/가입상태) 에서 볼수 있는 사이드(왼쪽) 메뉴  */
+#snbbody{  
+	padding-top : 20px;
 	float: left;
-	margin-top: 25%;
-	margin-left: 100px;
+	margin-top: -2px;
+	margin-left: auto;
+}
+
+/* 회원(/가입상태) 에서 볼수 있는 기존 페이지 오른쪽 float메뉴  */
+#rightcontent{  
+	width :80% ;
+	min-height : 80S% ;
+	position : relative ; 
+	z-index :10;
+	float: right;
+	margin-top: 2%;
+	margin-left: 300px;
+}
+
+#leftcontent{
+    width :70% ;
+	min-height : 100% ;
+	position : relative ; 
+	z-index :auto;
+	float: left;
+	margin-top: -50%;
+	margin-left: 50ㄴpx;
+	
+}
+
+#mainbody{
+	padding-top : 16px;
+	padding-bottom : 16px;
+	padding-left : 16px;
+	padding-right : 16px;
+	line-height: 14px;
+
+
 }

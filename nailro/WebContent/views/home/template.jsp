@@ -20,10 +20,14 @@
 			<div id="mainview" >
 				<div class="bestDiv">베스트</div>
 				<div></div>
-				<div class="loginDiv">로그인</div>
+				<div class="loginDiv">
+				<jsp:include page="/views/member/Loginform1.jsp"/>
+				</div>
   <!--게시판 예매하기 단   -->
 				<div id="boreDiv">
-					<div class="boardDiv">게시판</div>
+					<div class="boardDiv">
+					로그인
+					</div>
 					<div class="resverseDiv">예매하기</div>
 				</div>
 			</div>

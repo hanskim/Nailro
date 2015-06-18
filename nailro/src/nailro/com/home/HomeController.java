@@ -27,10 +27,6 @@ public class HomeController extends HttpServlet {
 			break;
         case "admin.home":
         	url="/views/admin/adminIndex.jsp";
-        	break;
-     /*   case "loginForm.me" :
-        	url="/views/member/LoginForm.jsp";*/
-        /*	break;	*/
 		default:
 			break;
 		}

@@ -10,7 +10,7 @@
 <title>회원가입 (Join Form)</title>
 <style>
 @IMPORT url("<%=request.getContextPath()%>/css/member/member.css");
-/*wrap 의  스타일을 주기 위해서 import 시킴 */
+/* wrap 의  스타일을 주기 위해서 import 시킴 */ 
 @IMPORT url("<%=request.getContextPath()%>/css/home/template.css");
 </style>
 </head>

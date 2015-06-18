@@ -14,7 +14,7 @@ import javax.servlet.http.HttpServletResponse;
 	         "/myPage.me","/nonmember.me",
 	         "/user.me","/admin.do",
 	         "/address.me","/logout.me" ,
-	        "/revise.me"})//패키지 리스트,패키지예약 ....  
+	        "/revise.me","/leave.me"})//패키지 리스트,패키지예약 ....  
 public class MemberController extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	protected void doprocess(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -78,10 +78,29 @@ public class MemberController extends HttpServlet {
  		 url="ReviseMember";
  		break;
 	
-   /*  case "":
-	
+     case "leave.me":
+    	 request=(HttpServletRequest) leave(request);
+ 		 url="LeaveMember";
 	     break;
-*/
+	     
+    /* case "":
+    		
+	     break;
+	     
+     case "":
+    		
+	     break;
+	     
+     case "":
+    		
+	     break;
+	     
+     case "":
+    		
+	     break;*/
+	     
+	     
+
 	default:
 		break;
 	}
@@ -91,11 +110,6 @@ public class MemberController extends HttpServlet {
 		dispatcher.forward(request, response);
 		
 	}
-
-
-
-	
-
 
 	private Object logout(HttpServletRequest request) {
 		String id = request.getParameter("id");
@@ -180,6 +194,17 @@ public class MemberController extends HttpServlet {
 		request.setAttribute("pass", pass);
 		return request;
 
+	}
+	
+	private Object leave(HttpServletRequest request) {
+		String id = request.getParameter("id");
+		String pass = request.getParameter("pass");
+		String memo = request.getParameter("memo");
+		request.setAttribute("id", id);
+		request.setAttribute("pass", pass);
+		request.setAttribute("memo", memo);
+		return request;
+	
 	}
 
 	

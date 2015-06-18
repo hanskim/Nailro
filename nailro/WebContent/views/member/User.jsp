@@ -14,6 +14,8 @@
 		<jsp:include page="/views/home/header.jsp" />
 		<div id="clear"></div>
 		<br /><br /><br /><br /><br /><br />
+		
+		<jsp:include page="SideMenu.jsp"/>
 
 		<fieldset>
 			<legend> User View </legend>
